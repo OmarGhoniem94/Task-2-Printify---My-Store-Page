@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Printify</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:700|Oswald|Patua+One&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Icons\my-icons-collection\font/flaticon.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="storeSection">
+        <div class="container">
+            <div class="col-md-6 col-sm-6 col-xs-6 title">
+                <h2>My Store</h2>
+                <span class="flaticon-settings"></span>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right btnGroup">
+                <div class="col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 getBtn"
+                    id="getBtn">
+                    <button class="btn">Get Samples</button>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-4 addBtn">
+                    <button class="btn">Add Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="square">
+                <div class="firstRow">
+                    <div class="checkboxParent">
+                        <label class="checkboxContainer">
+                            <input type="checkbox" id="check" hidden>
+                            <label for="check" class="checkmark"></label>
+                        </label>
+                    </div>
+                    <div class="col-xs-8 searchContainer">
+                        <div class="col-xs-3 searchIcon text-right">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                        <div class="col-xs-9 searchInput">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 dropdownContainer text-right">
+                        <div class="menuIcon dropdown-toggle
+                        " data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-indent-left"></span>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Recently edited
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Recently edited</a></li>
+                                <li><a href="#">Recently created</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemParent">
+                    <div class="checkboxParent2">
+                        <label class="checkboxContainer2">
+                            <input type="checkbox" id="check2" hidden>
+                            <label for="check2" class="checkmark2"></label>
+                        </label>
+                    </div>
+                    <div class="col-xs-3 col-sm-4 col-md-2 productPic ">
+                        <div class="image">
+                            <img src="Images/tshirt.webp" alt="photo">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-5 para text-left">
+                        <ul>
+                            <li class="title2">Men's Cotton Crew Tee</li>
+                            <li>Next Level - 3600</li>
+                            <li>Printed in United States by Monster Digital</li>
+                            <li>1 colors - 6 sizes</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 icons text-right">
+                        <ul>
+                            <li><span class="flaticon-brush"></span></li>
+                            <li><span class="flaticon-settings"></span></li>
+                            <li><span class="flaticon-copy-2"></span></li>
+                            <li><span class="flaticon-ellipsis"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="col-xs-8 col-xs-offset-2 modal-content">
+                <div class="header">
+                    <h4>Get $29.00 free Sample budget by subscribing to our Printify Premium plan.<span> Learn
+                            more.</span></h4>
+                </div>
+                <div class="content">
+                    <span class="close">&times;</span>
+                    <h2>Sample order</h2>
+                    <div class="orderStepsParent">
+                        <div class="orderSteps">
+                            <ul>
+                                <li class="col-xs-3 addProduct">1. Add products</li>
+                                <li class="col-xs-6 addShip">2. Add shipping information</li>
+                                <li class="col-xs-3 confirmOrder">3. Confirm order</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="addInput">
+                        <span class="col-xs-2 col-md-1 glyphicon glyphicon-plus"></span>
+                        <input class="col-xs-10 col-md-11"type="text" placeholder="Add from created products">
+                    </div>
+                    <div class="priceParent">
+                        <div class="price text-right">
+                            <span>Subtotal </span>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                    <div class="buttonParent text-right">
+                        <button class="btn">Continue with shipping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Index.js"></script>
+
+</html>
